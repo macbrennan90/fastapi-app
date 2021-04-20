@@ -64,7 +64,7 @@ jobs:
             -d \
             --name fastapi-app \
             -e PORT=8765 \
-            -e ENVIRONMENT=prod \
+            -e ENVIRONMENT=dev \
             -p 5003:8765 \
             ${{ env.IMAGE }}:latest
       - name: Pytest
