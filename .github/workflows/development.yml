@@ -7,6 +7,7 @@ on:
   pull_request:
     branches:
       - development
+      - production
 
 env:
   IMAGE: docker.pkg.github.com/$(echo $GITHUB_REPOSITORY | tr '[A-Z]' '[a-z]')/development
